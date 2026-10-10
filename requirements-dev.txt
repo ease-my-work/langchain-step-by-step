@@ -1,0 +1,3 @@
+# Tools for contributors only. Learners need just requirements.txt.
+-r requirements.txt
+ruff==0.17.0

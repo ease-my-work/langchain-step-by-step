@@ -1,0 +1,10 @@
+target-version = "py310"
+line-length = 100
+
+[lint]
+# E/F: pycodestyle + pyflakes, I: import order, B: common bugs, UP: modern syntax.
+select = ["E", "F", "I", "B", "UP"]
+
+[lint.isort]
+# Step folders import their own helper files (shop_tools.py, knowledge.py, ...) by plain name.
+known-first-party = ["shared", "shop_tools", "knowledge", "guardrails", "review", "specialists"]

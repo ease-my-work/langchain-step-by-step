@@ -1,0 +1,18 @@
+# This file only exists so `pip install -e .` (in requirements.txt) can install
+# the `shared/` helpers. The course itself is in steps/.
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "langchain-step-by-step"
+version = "1.0.0"
+description = "Learn LangChain step by step by building Barista Bot, a support assistant."
+requires-python = ">=3.10"
+license = "Apache-2.0"
+
+[tool.setuptools]
+packages = ["shared"]
+
+[tool.setuptools.package-data]
+shared = ["handbook/*.md"]

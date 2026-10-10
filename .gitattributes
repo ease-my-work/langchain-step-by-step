@@ -1,0 +1,4 @@
+# Normalise line endings so diffs between steps stay clean on every OS.
+* text=auto eol=lf
+*.bat text eol=crlf
+*.ps1 text eol=crlf

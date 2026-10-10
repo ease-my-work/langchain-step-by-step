@@ -1,0 +1,17 @@
+# Pinned on purpose: LangChain changes quickly, and every step in this repo is
+# tested against these exact versions. Bump them in one pull request and re-run
+# `python scripts/check_steps.py` and the steps before merging.
+langchain==1.4.4
+langchain-core==1.6.9
+langgraph==1.2.14
+langchain-text-splitters==1.1.3
+# The Gemini integration: chat models and embeddings.
+langchain-google-genai==4.4.0
+python-dotenv==1.2.4
+# The in-memory vector store (step 09 on) needs numpy for its maths.
+# A range, not a pin: the newest numpy no longer supports Python 3.10 and 3.11.
+numpy>=2.2,<3
+
+# Installs the repo's `shared/` helpers (fake shop data, printing), so every
+# step can `from shared import ...` wherever you run it from.
+-e .
