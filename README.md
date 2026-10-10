@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/ease-my-work/langchain-step-by-step/actions/workflows/ci.yml/badge.svg)](https://github.com/ease-my-work/langchain-step-by-step/actions/workflows/ci.yml)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
-[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/downloads/)
 [![LangChain 1.4](https://img.shields.io/badge/langchain-1.4-1C3C3C.svg)](https://pypi.org/project/langchain/)
 
 Learn **[LangChain](https://docs.langchain.com/oss/python/langchain/overview)** in about three hours by
@@ -17,7 +17,7 @@ Each step is a folder with one runnable `app.py`. It has everything the previous
 new features, and its README tells you exactly what was **added**, **changed** or **removed**, and why.
 
 > **Who is this for?** Python developers who are new to LangChain, or new to LLM apps altogether.
-> You need Python 3.10+ and a free Gemini API key. No cloud account, Docker or database.
+> You need Python 3.11+ and a free Gemini API key. No cloud account, Docker or database.
 
 ## Contents
 
@@ -274,7 +274,7 @@ ruff check . && ruff format --check .
 python scripts/check_steps.py     # imports every step and runs step 14's tests; no API key needed
 ```
 
-CI runs the same checks on Python 3.10 and 3.14. LangChain versions are pinned in `requirements.txt`;
+CI runs the same checks on Python 3.11 and 3.14. LangChain versions are pinned in `requirements.txt`;
 when you bump them, also run every step against a real model before merging.
 
 ## License
